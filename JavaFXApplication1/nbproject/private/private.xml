@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/javafxapplication1/Main.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/javafxapplication1/JavaFXApplication1.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/utils/DataBase.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/javafxapplication1/Crudlivraison.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/entite/Produit.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/Service/ServiceProduit.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/utils/MaConnection.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/stockflow/stockflow/JavaFXApplication1/src/IService/IServiceProduit.java</file>
+        </group>
     </open-files>
 </project-private>
