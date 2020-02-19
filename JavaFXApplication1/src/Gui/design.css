@@ -1,0 +1,66 @@
+
+
+.buttons{
+   
+   
+  -fx-border-radius: 22px;
+
+  -fx-background-color:  	#ff7400  ;
+ -fx-text-fill: white ;
+  -fx-text-alignment:left;
+  -fx-font-size: 14px;
+  -fx-padding: 2px;
+  -fx-width: 200px;
+  -fx-transition: all 0.5s;
+  -fx-cursor: hand;;
+  -fx-margin: 5px;
+
+}
+.button{
+     -fx-background-color: Transparent;
+      -fx-text-fill: white ;
+      -fx-font: System ;
+        -fx-font-size: 14px;
+     
+}
+
+.button:hover{
+     -fx-background-color: #ff7400;
+     
+        
+     
+}
+
+
+.buttons:hover  {
+  padding-right: 25px;
+  -fx-padding-right :25px ;
+  -fx-opacity: 1;
+  right: 0;
+ -fx-background-color:  #ff4500 ;
+}
+
+
+
+
+
+.parent{
+    -fx-background-color: 	#ff7400 ;
+}
+.backgroundlogo{
+    -fx-background-color: #52565E ;
+    
+}
+.buu{
+      
+  -fx-background-color:  #4ba3c3;
+    -fx-background-radius: 15 15 15 15;
+    -fx-border-radius: 15 15 15 15;
+    -fx-font-size: 20px;
+    
+}
+
+
+
+
+
