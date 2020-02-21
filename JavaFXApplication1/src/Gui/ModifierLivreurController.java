@@ -5,7 +5,7 @@
  */
 package Gui;
 
-import Entite.Livreur;
+import entite.Livreur;
 import Service.ServiceLivreur;
 import java.net.URL;
 import java.sql.SQLException;
