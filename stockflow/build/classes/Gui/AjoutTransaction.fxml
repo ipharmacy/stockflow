@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="nav" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjoutTransactionController">
+   <children>
+      <ImageView fx:id="dp" fitHeight="1080.0" fitWidth="1920.0" onDragExited="#Anul" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Produitbtn" layoutX="1.0" layoutY="393.0" mnemonicParsing="false" onAction="#GoProduitPage" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Produits" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="ServiceBtn" layoutX="1.0" layoutY="481.0" mnemonicParsing="false" onAction="#GoServiceFinancierPage" onMouseMoved="#DisplayEntrepots" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Service financier" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="CommandeBtn" layoutX="1.0" layoutY="569.0" mnemonicParsing="false" onAction="#goCommandePage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Commande" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="LivraisonBtn" layoutX="1.0" layoutY="663.0" mnemonicParsing="false" onAction="#goLivraisonPage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livraison " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="LivreurBtn" layoutX="1.0" layoutY="751.0" mnemonicParsing="false" onAction="#goLivreurPage" onMouseMoved="#DisplayEntrepots" prefHeight="82.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livreur" textFill="#eeeeee">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="472.0" layoutY="114.0" prefHeight="116.0" prefWidth="1447.0" style="-fx-background-color: transparent;">
+         <children>
+            <Button fx:id="modifier" layoutX="1198.0" layoutY="10.0" minWidth="45.0" mnemonicParsing="false" onAction="#ModifierLivreur" prefHeight="69.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="ModifierBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/support%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="tfrecherchelivreur" layoutX="28.0" layoutY="29.0" onKeyReleased="#rechercher" prefHeight="59.0" prefWidth="346.0" />
+            <Button fx:id="ajouter" layoutX="962.0" layoutY="10.0" minWidth="49.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="89.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="addBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/plus%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="supprimer" layoutX="1084.0" layoutY="10.0" minWidth="49.0" mnemonicParsing="false" onAction="#SupprimerLivreur" prefHeight="69.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="SupprimerBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/bin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="boutontrierlivreur" layoutX="1323.0" layoutY="10.0" minWidth="43.0" mnemonicParsing="false" onAction="#TrierLivreur" prefHeight="67.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="509.0" layoutY="45.0" prefHeight="43.0" prefWidth="372.0" text="Gestion des transactions">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab" layoutX="522.0" layoutY="271.0" prefHeight="38.0" prefWidth="299.0" text="Ajouter transaction">
+         <font>
+            <Font name="Berlin Sans FB" size="34.0" />
+         </font>
+      </Label>
+      <AnchorPane id="AnchorPane" layoutX="806.0" layoutY="518.0" prefHeight="421.0" prefWidth="668.0">
+         <children>
+            <Label fx:id="typeLabel" layoutX="40.0" layoutY="97.0" prefHeight="17.0" prefWidth="115.0" text="TYPE" />
+            <Label fx:id="amountLabel" layoutX="40.0" layoutY="138.0" prefHeight="17.0" prefWidth="103.0" text="AMOUNT" />
+            <Label fx:id="paiementLabel" layoutX="40.0" layoutY="183.0" text="PAYMENT METHOD" />
+            <Label fx:id="idLabel" layoutX="40.0" layoutY="233.0" text="ID CLIENT" />
+            <Label fx:id="dateLabel" layoutX="40.0" layoutY="287.0" text="TRANSACTION DATE" />
+            <Button fx:id="addTr" layoutX="328.0" layoutY="351.0" mnemonicParsing="false" onAction="#addTransaction" prefHeight="33.0" prefWidth="103.0" text="Ajouter" />
+            <Button layoutX="511.0" layoutY="351.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="103.0" text="Annuler" />
+            <DatePicker fx:id="datetransaction" layoutX="282.0" layoutY="283.0" />
+            <TextField fx:id="typetransaction" layoutX="282.0" layoutY="93.0" />
+            <TextField fx:id="amounttransaction" layoutX="282.0" layoutY="134.0" />
+            <TextField fx:id="paymentmethod" layoutX="282.0" layoutY="179.0" />
+            <TextField fx:id="idclienttransaction" layoutX="282.0" layoutY="229.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

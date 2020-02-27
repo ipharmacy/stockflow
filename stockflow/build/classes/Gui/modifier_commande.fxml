@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="nav" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Modifier_commandeController">
+   <children>
+      <ImageView fx:id="dp" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="acc" layoutX="1.0" layoutY="481.0" mnemonicParsing="false" onAction="#UpdateCommande" onMouseMoved="#DisplayEntrepots" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Modifier commande" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="affiche" layoutX="1.0" layoutY="569.0" mnemonicParsing="false" onAction="#Back" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Consulter commande" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_cancel" layoutX="1.0" layoutY="663.0" mnemonicParsing="false" onAction="#Cancel" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="533.0" layoutY="284.0" prefHeight="608.0" prefWidth="1156.0">
+         <children>
+            <Text fx:id="Quantite" layoutX="41.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="50.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Totale" wrappingWidth="163.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <TextField fx:id="quantite_Tf" layoutX="392.0" layoutY="70.0" prefHeight="61.0" prefWidth="227.0" />
+            <TextField fx:id="PrixTotale_Tf" layoutX="392.0" layoutY="243.0" prefHeight="61.0" prefWidth="227.0" />
+            <Text fx:id="Adresse" layoutX="66.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" wrappingWidth="125.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="Nom_Produit" layoutX="41.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produit">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nom_Produit_Tf" layoutX="392.0" layoutY="5.0" prefHeight="54.0" prefWidth="227.0" />
+            <TextField fx:id="Adresse_Tf" layoutX="392.0" layoutY="346.0" prefHeight="61.0" prefWidth="237.0" />
+            <TextField fx:id="prop_Tf" layoutX="392.0" layoutY="444.0" prefHeight="54.0" prefWidth="247.0" />
+            <Text fx:id="Adresse1" layoutX="65.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Au nom de" wrappingWidth="172.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="41.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Unitaire" wrappingWidth="181.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Prix_Unitaire_Tf" layoutX="392.0" layoutY="153.0" prefHeight="61.0" prefWidth="227.0" />
+            <AnchorPane fx:id="travailleIci" layoutX="342.0" layoutY="-52.0" prefHeight="848.0" prefWidth="1447.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="509.0" layoutY="45.0" prefHeight="43.0" prefWidth="486.0" text="Modification des commandes">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idC_Tf" layoutX="1019.0" layoutY="180.0" />
+   </children>
+</AnchorPane>

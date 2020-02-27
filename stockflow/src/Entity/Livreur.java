@@ -6,13 +6,13 @@
 package Entity;
 
 public class Livreur {
-    int id ; 
+    int id ,iduser; 
     float notetotal ;
     String nom,prenom ;
 int age, num ; 
 String mail ;
 
-    public Livreur(int id, float notetotal, String nom, String prenom, int age, int num, String mail) {
+    public Livreur(int id, float notetotal, String nom, String prenom, int age, int num, String mail,int iduser) {
         this.id = id;
         this.notetotal = notetotal;
         this.nom = nom;
@@ -20,8 +20,9 @@ String mail ;
         this.age = age;
         this.num = num;
         this.mail = mail;
+        this.iduser=iduser ;
     }
-    public Livreur(int id, String nom, String prenom, int age, int num, String mail) {
+    public Livreur(int id, String nom, String prenom, int age, int num, String mail,int iduser) {
         this.id = id;
         
         this.nom = nom;
@@ -30,6 +31,7 @@ String mail ;
         this.num = num;
         this.mail = mail;
         notetotal=0 ;
+        this.iduser =iduser ;
     }
 
     public Livreur(float notetotal, String nom, String prenom, int age, int num, String mail) {
@@ -57,6 +59,14 @@ public Livreur( String nom, String prenom, int age, int num, String mail) {
 
     public int getAge() {
         return age;
+    }
+
+    public void setIduser(int iduser) {
+        this.iduser = iduser;
+    }
+
+    public int getIduser() {
+        return iduser;
     }
 
     public int getNum() {

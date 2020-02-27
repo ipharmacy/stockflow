@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ach" prefHeight="1080.0" prefWidth="1908.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LivreurWindowController">
+   <children>
+      <ImageView fx:id="dp" fitHeight="1080.0" fitWidth="1920.0" layoutY="1.0" onDragExited="#Anul" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="barre" layoutX="530.0" layoutY="124.0" prefHeight="891.0" prefWidth="1387.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="bouttonajouter" layoutX="1189.0" layoutY="51.0" minWidth="49.0" mnemonicParsing="false" onAction="#ajouterlivreur" prefHeight="43.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/plus%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="boutonstats" layoutX="1270.0" layoutY="23.0" minWidth="43.0" mnemonicParsing="false" onAction="#stats" prefHeight="109.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/presentation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ScrollPane fx:id="affichageListe" layoutX="-60.0" layoutY="146.0" prefHeight="812.0" prefWidth="713.0" style="-fx-background-color: green;" />
+            <Button fx:id="buttonactualiser" layoutX="394.0" layoutY="48.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="25.0" prefWidth="80.0" text="Actualiser" />
+            <VBox layoutX="766.0" layoutY="231.0" prefHeight="713.0" prefWidth="614.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="tf_prenom_livreur_a_ajouter" prefHeight="51.0" prefWidth="190.0" promptText="Prenom" style="-fx-background-color: #CACCD1;" styleClass="textfieldss" />
+                  <TextField fx:id="tf_nom_livreur_a_ajouter" prefHeight="51.0" prefWidth="190.0" promptText="Nom" style="-fx-background-color: #CACCD1;" styleClass="textfieldss" />
+                  <TextField fx:id="tf_age_livreur_a_ajouter" prefHeight="44.0" prefWidth="190.0" promptText="Age" style="-fx-background-color: #CACCD1;" />
+                  <TextField fx:id="tf_mail_livreur_a_ajouter" prefHeight="51.0" prefWidth="190.0" promptText="MAIL" style="-fx-background-color: #CACCD1 #CACCD1;" styleClass="textfieldss" />
+                  <TextField fx:id="tf_numero_livreur_a_ajouter1" prefHeight="44.0" prefWidth="190.0" promptText="NUMERO" style="-fx-background-color: #CACCD1;" styleClass="textfieldss" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                     <children>
+                        <Button fx:id="buttonannuler" mnemonicParsing="false" onAction="#AnnulerAjouterLivreur" prefHeight="67.0" prefWidth="170.0" style="-fx-background-color: #CACCD1;" text="Annuler">
+                           <padding>
+                              <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="buttonajouterlivreur" mnemonicParsing="false" onAction="#AjouterLivreur" prefHeight="67.0" prefWidth="165.0" style="-fx-background-color: #CACCD1;" text="AJouter">
+                           <padding>
+                              <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="labelerreur" text="VEULLEZ REMPLIR TOUS LES CHAMPS" textFill="#e11818">
+                     <padding>
+                        <Insets left="30.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="label1" layoutX="653.0" layoutY="143.0" prefHeight="817.0" prefWidth="735.0" style="-fx-background-color: #CFCEC9;" wrapText="true">
+               <graphic>
+                  <AnchorPane fx:id="anchorpanestat" prefHeight="809.0" prefWidth="671.0">
+                     <children>
+                        <BarChart fx:id="statbarchart" layoutX="47.0" layoutY="18.0" prefHeight="684.0" prefWidth="548.0" title="NOTES">
+                           <xAxis>
+                              <CategoryAxis label="NOM LIVREUR" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="NOTES" side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <Button fx:id="boutondisplaystats" layoutX="82.0" layoutY="746.0" mnemonicParsing="false" onAction="#displaystats" style="-fx-background-color: black;" text="DISPLAY STATS" />
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="LivreurBtn" layoutX="11.0" layoutY="761.0" mnemonicParsing="false" onAction="#goLivreurPage" onMouseMoved="#DisplayEntrepots" prefHeight="82.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livreur" textFill="#eeeeee">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="LivraisonBtn" layoutX="11.0" layoutY="673.0" mnemonicParsing="false" onAction="#goLivraisonPage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livraison " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="CommandeBtn" layoutX="11.0" layoutY="579.0" mnemonicParsing="false" onAction="#goCommandePage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Commande" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="ServiceBtn" layoutX="11.0" layoutY="491.0" mnemonicParsing="false" onAction="#GoServiceFinancierPage" onMouseMoved="#serviceFinancierModules" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Service financier" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="Produitbtn" layoutX="11.0" layoutY="403.0" mnemonicParsing="false" onAction="#GoProduitPage" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Produits" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

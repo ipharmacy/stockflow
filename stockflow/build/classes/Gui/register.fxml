@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="nav" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+    <children>
+      <ImageView fx:id="dp" fitHeight="1080.0" fitWidth="1920.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="986.0" layoutY="914.0" onAction="#back" prefHeight="51.0" prefWidth="178.0" text="&lt;-Back" />
+      <VBox layoutX="684.0" layoutY="382.0" prefHeight="451.0" prefWidth="331.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="170.0" text="Last Name     :" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="80.0" text="First Name    :" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="108.0" text="Email            :  " />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="103.0" text="Login             :" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="104.0" text="Password       :" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="183.0" text="Confirm Password   :" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="143.0" text="Phone  Number      :" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="1100.0" layoutY="357.0" prefHeight="501.0" prefWidth="505.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+            <HBox prefHeight="43.0" prefWidth="354.0" spacing="40.0" />
+         </children>
+      </VBox>
+      <Button layoutX="1209.0" layoutY="914.0" onAction="#reg" prefHeight="49.0" prefWidth="185.0" text="Register Now">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TextField fx:id="tf7" layoutX="999.0" layoutY="790.0" />
+      <TextField fx:id="tf6" layoutX="999.0" layoutY="728.0" />
+      <PasswordField fx:id="tf5" layoutX="999.0" layoutY="651.0" />
+      <TextField fx:id="tf4" layoutX="999.0" layoutY="582.0" />
+      <TextField fx:id="tf3" layoutX="1000.0" layoutY="510.0" />
+      <TextField fx:id="tf2" layoutX="999.0" layoutY="456.0" />
+      <TextField fx:id="tf1" layoutX="998.0" layoutY="380.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 févr. 2020, 23:15:49
+    Author     : Dhia
+*/
+.Produitbtn:hover{
+    -fx-background-color: white;
+}
+.addBtn:hover{
+    -fx-background-color: black;
+}
+.button{
+     -fx-background-color: Transparent;
+      -fx-text-fill: white ;
+      -fx-font: System ;
+        -fx-font-size: 14px;
+     
+}
+
+.button:hover{
+     -fx-background-color: #ff7400;
+     
+        
+     
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="nav" prefHeight="447.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProduitModifierWindowController">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fx:id="bg" fitHeight="516.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="93.0" prefHeight="38.0" prefWidth="240.0" text="Modifier Produit">
+         <font>
+            <Font name="Berlin Sans FB" size="34.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="195.0" layoutY="141.0" prefHeight="310.0" prefWidth="603.0">
+         <children>
+            <Label layoutX="61.0" layoutY="34.0" text="Nom :">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="79.0" text="Quantité :">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="133.0" text="Prix :">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="183.0" text="Catégorie :">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tnom" layoutX="252.0" layoutY="30.0" />
+            <TextField fx:id="tquantite" layoutX="252.0" layoutY="75.0" />
+            <TextField fx:id="tprix" layoutX="252.0" layoutY="129.0" />
+            <Button layoutX="444.0" layoutY="269.0" mnemonicParsing="false" onAction="#modifier" text="Valider" />
+            <Button layoutX="523.0" layoutY="268.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+            <TextField fx:id="id" layoutX="372.0" layoutY="221.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="imgbtn" layoutX="444.0" layoutY="30.0" mnemonicParsing="false" onAction="#imgGetUrl" text="Selectionner l'image" />
+            <Label fx:id="imgUrl" layoutX="500.0" layoutY="160.0" text="Label" />
+            <TextField fx:id="imgg" layoutX="442.0" layoutY="91.0" />
+            <ComboBox fx:id="cat" layoutX="257.0" layoutY="179.0" prefHeight="31.0" prefWidth="187.0" promptText="Selection une catégorie" />
+            <ComboBox fx:id="cat1" layoutX="257.0" layoutY="237.0" prefHeight="31.0" prefWidth="187.0" promptText="selectionner l'entrepot" />
+            <Label layoutX="65.0" layoutY="241.0" text="Entrepot">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="id_util" layoutX="490.0" layoutY="102.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

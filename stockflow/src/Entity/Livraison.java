@@ -22,6 +22,9 @@ public class Livraison {
 int idcommande ; 
     String done ; 
 
+    public Livraison() {
+    }
+
     public Livraison(int idlivraison, int idlivreur, String nomlivreur, String prenomlivreur, java.util.Date datelivraison, java.util.Date timelivraison, int idcommande, String done) {
         this.idlivraison = idlivraison;
         this.idlivreur = idlivreur;

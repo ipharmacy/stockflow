@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="nav" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EkhdemController">
+   <children>
+      <Label layoutX="68.0" layoutY="46.0" prefHeight="17.0" prefWidth="121.0" text="Adresse Email" />
+      <TextField fx:id="adresse" layoutX="196.0" layoutY="42.0" />
+      <TextArea fx:id="messageE" layoutX="171.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="68.0" layoutY="119.0" text="Message" />
+      <Button layoutX="271.0" layoutY="327.0" mnemonicParsing="false" onAction="#Envoi" text="Button" />
+   </children>
+</AnchorPane>

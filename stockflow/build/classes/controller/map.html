@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="http://openlayers.org/api/2.11/OpenLayers.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script type="text/javascript"   >
+            var myMap;
+            var cx; 
+            var cy ;  
+            var cz ;  
+            var cw ; 
+            function loadOpenLayers(){  
+
+            myMap = new OpenLayers.Map("mymap", {});
+
+            var wms = new OpenLayers.Layer.OSM;
+
+
+            myMap.addLayer(wms);
+
+            myMap.setCenter(new OpenLayers.LonLat(36.8189700,10.1657900));
+            myMap.zoomTo(3);   
+
+            document.getElementById("mymap").onclick = function(event) 
+            {
+
+            var lonlat = myMap.getLonLatFromPixel(new OpenLayers.Pixel(event.clientX, event.clientY));
+            cx=lonlat.lon/100000;
+            cy=lonlat.lat/100000;
+            settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://eu1.locationiq.com/v1/reverse.php?key=pk.25039cf908c97c6f474d5fd3ac3fb2aa&lat='"+cy+"'&lon='"+cx+"'&format=json",
+            "method": "GET"
+            }
+            $.ajax(settings).done(function (response) {
+            cz= response.address.country ;
+            cw = response.address.state ; 
+            });
+            };
+            } 
+            function getCx()
+            {
+            return cx; 
+            }
+            function getCy()
+            {
+            return cy; 
+            }
+            function getCountry()
+            {
+            return cz; 
+            }
+            function getAddress()
+            {
+            return cw;
+            }
+        </script>
+        </head>
+    <body onload="loadOpenLayers();">
+        <div id="mymap" style="width:1200px; height: 400px; border: 1px solid;">
+        </div>
+    </body>
+</html>

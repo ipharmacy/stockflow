@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="nav" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProduitAjoutWindowController">
+   <children>
+      <ImageView fx:id="dp" fitHeight="1080.0" fitWidth="1920.0" onDragExited="#Anul" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Produitbtn" layoutX="1.0" layoutY="393.0" mnemonicParsing="false" onAction="#GoProduitPage" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Produits" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="ServiceBtn" layoutX="1.0" layoutY="481.0" mnemonicParsing="false" onAction="#GoServiceFinancierPage" onMouseMoved="#DisplayEntrepots" prefHeight="88.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Service financier" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="CommandeBtn" layoutX="1.0" layoutY="569.0" mnemonicParsing="false" onAction="#goCommandePage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="Commande" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="LivraisonBtn" layoutX="1.0" layoutY="663.0" mnemonicParsing="false" onAction="#goLivraisonPage" onMouseMoved="#DisplayEntrepots" prefHeight="94.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livraison " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="LivreurBtn" layoutX="1.0" layoutY="751.0" mnemonicParsing="false" onAction="#goLivreurPage" onMouseMoved="#DisplayEntrepots" prefHeight="82.0" prefWidth="472.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" text="livreur" textFill="#eeeeee">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="472.0" layoutY="114.0" prefHeight="116.0" prefWidth="1447.0" style="-fx-background-color: transparent;">
+         <children>
+            <Button fx:id="modifier" layoutX="1198.0" layoutY="10.0" minWidth="45.0" mnemonicParsing="false" onAction="#ModifierLivreur" prefHeight="69.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="ModifierBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/support%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="tfrecherchelivreur" layoutX="28.0" layoutY="29.0" onKeyReleased="#rechercher" prefHeight="59.0" prefWidth="346.0" />
+
+            <Button fx:id="ajouter" layoutX="962.0" layoutY="10.0" minWidth="49.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="89.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="addBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/plus%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="supprimer" layoutX="1084.0" layoutY="10.0" minWidth="49.0" mnemonicParsing="false" onAction="#SupprimerLivreur" prefHeight="69.0" prefWidth="88.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="SupprimerBtn" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/bin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="boutontrierlivreur" layoutX="1323.0" layoutY="10.0" minWidth="43.0" mnemonicParsing="false" onAction="#TrierLivreur" prefHeight="67.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="509.0" layoutY="45.0" prefHeight="43.0" prefWidth="372.0" text="Gestion des produits">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="imgUrl" layoutX="1629.0" layoutY="834.0" text="Label" />
+      <Button fx:id="imgbtn" layoutX="1105.0" layoutY="840.0" mnemonicParsing="false" onAction="#RecupererUrl" prefHeight="31.0" prefWidth="212.0" text="Selectionner une image" />
+      <Label layoutX="872.0" layoutY="840.0" text="Image :">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cat" layoutX="1108.0" layoutY="749.0" prefHeight="31.0" prefWidth="212.0" promptText="Saisir une categorie" />
+      <Button fx:id="ac" layoutX="903.0" layoutY="41.0" mnemonicParsing="false" onAction="#ajoutcatg" style="-fx-background-color: transparent;" text="Ajouter Catégorie ">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tprix" layoutX="1105.0" layoutY="686.0" prefHeight="31.0" prefWidth="212.0" promptText="Entrer le prix" />
+      <TextField fx:id="tquantite" layoutX="1105.0" layoutY="596.0" prefHeight="31.0" prefWidth="212.0" promptText="Entrer la quantité" />
+      <TextField fx:id="tnom" layoutX="1105.0" layoutY="527.0" prefHeight="31.0" prefWidth="212.0" promptText="Entrer votre nom" />
+      <Button layoutX="1002.0" layoutY="926.0" mnemonicParsing="false" onAction="#ajout" prefHeight="48.0" prefWidth="126.0" text="Ajouter" />
+      <Label layoutX="876.0" layoutY="749.0" text="Catégorie :">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="874.0" layoutY="679.0" text="Prix :">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="876.0" layoutY="604.0" text="Quantité :">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="876.0" layoutY="527.0" text="Nom : ">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab" layoutX="522.0" layoutY="271.0" text="Ajouter produit">
+         <font>
+            <Font name="Berlin Sans FB" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="ac1" layoutX="1194.0" layoutY="41.0" mnemonicParsing="false" onAction="#suppcatg" style="-fx-background-color: transparent;" text="Supprimer Catégorie ">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id_user" layoutX="1460.0" layoutY="512.0" />
+      <Label layoutX="876.0" layoutY="792.0" text="Entrepot :">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cat1" layoutX="1108.0" layoutY="792.0" prefHeight="31.0" prefWidth="212.0" promptText="Saisir un entrepot" />
+      <Label fx:id="labelerreur" layoutX="1092.0" layoutY="491.0" prefHeight="21.0" prefWidth="225.0" text="Veuillez remplir tous les champs" textFill="RED" />
+   </children>
+</AnchorPane>

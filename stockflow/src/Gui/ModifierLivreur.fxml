@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.ModifierLivreurController">
+   <children>
+      <Button layoutX="227.0" layoutY="356.0" mnemonicParsing="false" onAction="#ModifierLivreur" text="Modifier" />
+      <TextField fx:id="tf_prenom_livreur" layoutX="215.0" layoutY="87.0" />
+      <TextField fx:id="tf_nom_livreur" layoutX="213.0" layoutY="42.0" />
+      <TextField fx:id="tf_note_livreur" layoutX="215.0" layoutY="308.0" />
+      <TextField fx:id="tf_mail_livreur" layoutX="215.0" layoutY="251.0" />
+      <TextField fx:id="tf_numero_livreur" layoutX="215.0" layoutY="185.0" />
+      <TextField fx:id="tf_age_livreur" layoutX="214.0" layoutY="137.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Entity/Produit.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Interfaces/IServiceTransaction.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/LoginController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/ModifierLivreurController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Services/ControlleSaisie.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Services/ServiceUser.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Entity/Transaction.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/AjoutEntrepotWindowController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/AjoutentrepotalouerController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/LivraionWindowController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/gui/afficher_commande.fxml</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/AdminController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Interfaces/IServiceClient.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Services/serviceTransaction.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/LivreurWindowController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/RegisterController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Api/pdf.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/gui/bilan.fxml</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/MapApiController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Entity/SmsSender.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/Services/serviceFacture.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/ProduitAjoutWindowController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/ProduitWindowController.java</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/gui/ProduitWindow.fxml</file>
+            <file>file:/C:/Users/Dhia/Desktop/pii/Final_Project/Stockflow/src/controller/Afficher_commandeController.java</file>
+        </group>
+    </open-files>
+</project-private>
